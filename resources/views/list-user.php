@@ -18,7 +18,7 @@
     <tbody>
         <?php foreach ($users as $value) : ?>
             <tr>
-                <td><?= $value['id'][0] ?></td>
+                <td><?= $value['id'] ?></td>
                 <td><?= $value['name'] ?></td>
             </tr>
         <?php endforeach; ?>
