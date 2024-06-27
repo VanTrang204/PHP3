@@ -1,5 +1,5 @@
 <?php
-
+use App\Http\Controllers\TrangController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -27,3 +27,5 @@ Route::get('/list-user', [UserController::class, 'showUser']);
 Route::get('/get-user/{id}/{name?}', [UserController::class, 'getUser']);
 
 Route::get('/update-user', [UserController::class, 'updateUser']);
+
+Route::get('/thong-tin-sv', [TrangController::class, 'showUser']);
